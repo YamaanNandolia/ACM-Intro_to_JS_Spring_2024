@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Calculator Example for ACM</title> <!-- title of the viewport -->
+    <link href="styles.css" rel="stylesheet"/>
+<body>
+    <!-- Code below is just using the appendToDisplay function to show the imputed numbers on the screen -->
+     <div id="calculator">
+        <input id="display" readonly> <!-- restricting display to readonly so no undefined input issues pop up -->
+        <div id="keys"> <!-- nested div to implement the function -->
+            <button onclick="appendToDisplay('+')" class="operator-btn">+</button>
+            <button onclick="appendToDisplay('7')">7</button>
+            <button onclick="appendToDisplay('8')">8</button>
+            <button onclick="appendToDisplay('9')">9</button>
+            <button onclick="appendToDisplay('-')" class="operator-btn">-</button>
+            <button onclick="appendToDisplay('4')">4</button>
+            <button onclick="appendToDisplay('5')">5</button>
+            <button onclick="appendToDisplay('6')">6</button>
+            <button onclick="appendToDisplay('*')" class="operator-btn">*</button>
+            <button onclick="appendToDisplay('1')">1</button>
+            <button onclick="appendToDisplay('2')">2</button>
+            <button onclick="appendToDisplay('3')">3</button>
+            <button onclick="appendToDisplay('/')" class="operator-btn">/</button>
+            <button onclick="appendToDisplay('0')">0</button>
+            <button onclick="appendToDisplay('.')">.</button>
+            
+            <button onclick="calculate()">=</button>
+            <button onclick="clearDisplay()" class="operator-btn">C</button>
+        </div> <!-- End of nested div code -->
+    </div> 
+
+    <script src="index.js"></script> <!-- using the js from the mentioned file -->
+
+</body> <!-- End of body code -->
+</html> <!-- End of HTML code -->
